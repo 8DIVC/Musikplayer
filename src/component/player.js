@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import useSound from "use-sound";
-import qala from "../assets/heavy_lyrics_linkin_park_ft._kiiara_mp3_4353.mp3";
+import song from "../assets/heavy.mp3";
 import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi";
 import { IconContext } from "react-icons";
@@ -18,7 +18,7 @@ export default function Player() {
 
   const [seconds, setSeconds] = useState();
 
-  const [play, { pause, duration, sound }] = useSound(qala);
+  const [play, { pause, duration, sound }] = useSound(song);
   let name="trees"
   let artist="twenty one pilots"
   let cover="https://bocdn.ecotree.green/blog/0001/01/ad46dbb447cd0e9a6aeecd64cc2bd332b0cbcb79.jpeg?d=240x135"
