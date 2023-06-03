@@ -5,6 +5,11 @@ import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // aqui es
 import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // estos son los iconos de los botones antes y despues
 import { IconContext } from "react-icons"; // este es para personalizar los iconos
 import {track} from "../component/track";
+import {
+  IoMdVolumeHigh,
+  IoMdVolumeOff,
+  IoMdVolumeLow,
+} from 'react-icons/io';
 
 export default function Player() {
 
@@ -18,8 +23,8 @@ export default function Player() {
   const [trackIndex, setTrackIndex] = useState(0);
   const [currenTrack, setCurrenTrack] = useState(track[trackIndex]); 
 
-  const [volume, setVolume] = useState(60);
-  const [muteVolume, setMuteVolume] = useState(false);
+  /* const [volumen, setVolumen] = useState(60);
+  const [muteVolume, setMuteVolume] = useState(false); */
 
   const [currTime, setCurrTime] = useState({
     min: "",
@@ -30,10 +35,6 @@ export default function Player() {
 
   //aqui inicia donde se almacena la cancion
   const [play, { pause, audioRef, duration, sound, stop }] = useSound(currenTrack.src);  //esta parte llama la cancion
-  const[name, setName] =useState(currenTrack.title);
-  const[artist, setArtist] =useState(currenTrack.author);
-  const [cover, setCover] = useState(currenTrack.thumbnail); //esta es la imagen
-  //aqui termina donde se almacena la cancion
   
 
 
@@ -77,10 +78,8 @@ export default function Player() {
       setTrackIndex((prev) => prev + 1);
       setCurrenTrack(track[trackIndex + 1]);
     }
-    setName(currenTrack.title);
-    setArtist(currenTrack.author);
-    setCover(currenTrack.thumbnail);
-  }; // aqui termina
+   
+  };
 
   // aqui empieza para la cancion previa
   const handlePrevious = () => { 
@@ -94,10 +93,8 @@ export default function Player() {
       setTrackIndex((prev) => prev - 1);
       setCurrenTrack(track[trackIndex - 1]);
     }
-    setName(currenTrack.title);
-    setArtist(currenTrack.author);
-    setCover(currenTrack.thumbnail);
-  };  // aqui termina
+    
+  }; 
 
 
   const playingButton = () => { // este es el codigo para dar funcion a los botones pausar y reproducir
@@ -110,20 +107,21 @@ export default function Player() {
     }
   }; // aqui termina
 
+/* 
   useEffect(() => {
     if (audioRef) {
-      audioRef.current.volume = volume / 100;
+      audioRef.current.volumen = volumen / 100;
       audioRef.current.muted = muteVolume;
     }
-  }, [volume,audioRef, muteVolume]);
+  }, [volumen,audioRef, muteVolume]); */
 
   return ( // este es para mostar el reproductor de musica UI
     <div className="component">
       <h2>Playing now</h2> 
-      <img className="musicCover" src= {cover} />
+      <img className="musicCover" src= {currenTrack.thumbnail} />
       <div>
-        <h3 className="title">{name}</h3>
-        <p className="subTitle">{artist}</p>
+        <h3 className="title">{currenTrack.title}</h3>
+        <p className="subTitle">{currenTrack.author}</p>
       </div>
       <div>
         <div className="time">
@@ -170,10 +168,11 @@ export default function Player() {
             <BiSkipNext />
           </IconContext.Provider>
         </button>
-        <button className="playButton" onClick={() => setMuteVolume}>
-
-        </button>
       </div>}
+      <div className="letra">
+        {currenTrack.lyrics}
+      </div>
     </div>
+    
   );
 } // aqui termina el codigo para mostrar el reproductor de musica UI
