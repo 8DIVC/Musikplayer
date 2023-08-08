@@ -6,7 +6,7 @@ import mind from '../assets/canciones/heavy.mp3';
 
 export const track = [
     {
-        title: 'Citizen Soldiers-Let it burn',
+        title: 'Let it burn',
         src: burn,
         author: 'Citizen Soldier',
         thumbnail: 'https://i1.sndcdn.com/avatars-kgFrNA8w3tUZt2dc-Xh7jGw-t500x500.jpg',
@@ -75,10 +75,10 @@ export const track = [
         Light it up and let it burn`
     },
     {
-        title: 'Meg & Dia-Monster',
+        title: 'Monster',
         src: meg,
         author: 'Meg & Dia',
-        thumbnail: 'https://www.whosampled.com/static/track_images_200/lr43330_2012625_115817889352.jpg',
+        thumbnail: 'https://cdns-images.dzcdn.net/images/cover/cff2fcfc610a08d90a9b2c0d0d9e7e4b/264x264.jpg',
         lyrics: `His little whispers: Love me, love me
         That's all I ask for: Love me, love me
         He battered his tiny fists to feel something
@@ -112,7 +112,7 @@ export const track = [
         Their words tattooed in his veins`
     },
     {
-        title: 'Superchick-Stand in the rain',
+        title: 'Stand in the rain',
         src: rain,
         author: 'Superchick',
         thumbnail: 'https://ih1.redbubble.net/image.3627038180.2483/fcp,small,wall_texture,product,750x1000.jpg',
@@ -163,7 +163,7 @@ export const track = [
         You stand in the rain`
     },
     {
-        title: 'Linkin Park-Heavy',
+        title: 'Heavy',
         src: mind,
         author: 'Linkin park',
         thumbnail: 'https://i.pinimg.com/236x/d1/ba/17/d1ba1776b8f6cbe6b6c88e89643891f0--linkin-park-parks.jpg',
