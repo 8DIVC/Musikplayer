@@ -1,8 +1,8 @@
 import { useEffect, useState, useRef } from "react";
 import useSound from "use-sound"; //este es para manejar el sonido
 import song from "../assets/canciones/heavy.mp3"; //llamar la cancion
-import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // aqui estan los iconos de los botones de play y pausa
-import { BiSkipNext, BiSkipPrevious } from "react-icons/bi"; // estos son los iconos de los botones antes y despues
+import { AiOutlinePlayCircle, AiOutlinePauseCircle } from "react-icons/ai"; // aqui estan los iconos de los botones de play y pausa
+import { BiSkipNextCircle, BiSkipPreviousCircle } from "react-icons/bi"; // estos son los iconos de los botones antes y despues
 import { IconContext } from "react-icons"; // este es para personalizar los iconos
 import {track} from "../component/track";
 import {
@@ -146,26 +146,26 @@ export default function Player() {
       </div>
       {<div>          
         <button className="playButton" onClick={handlePrevious}>     
-          <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>     
-            <BiSkipPrevious />     
+          <IconContext.Provider value={{ size: "4em", color: "black" }}>     
+            <BiSkipPreviousCircle />     
           </IconContext.Provider>     
         </button>    
         {!isPlaying ? (
-          <button className="playbutton" onClick={playingButton}>
-            <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-              <AiFillPlayCircle />
+          <button className="playButton" onClick={playingButton}>
+            <IconContext.Provider value={{ size: "4em", color: "black" }}>
+              <AiOutlinePlayCircle />
             </IconContext.Provider>
           </button>
         ) : (
           <button className="playButton" onClick={playingButton}>
-            <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-              <AiFillPauseCircle />
+            <IconContext.Provider value={{ size: "4em", color: "black" }}>
+              <AiOutlinePauseCircle />
             </IconContext.Provider>
           </button>
         )}
         <button className="playButton" onClick={handleNext}>
-          <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
-            <BiSkipNext />
+          <IconContext.Provider value={{ size: "4em", color: "black" }}>
+            <BiSkipNextCircle />
           </IconContext.Provider>
         </button>
       </div>}

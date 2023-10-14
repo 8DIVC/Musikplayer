@@ -6,10 +6,10 @@ import mind from '../assets/canciones/heavy.mp3';
 
 export const track = [
     {
-        title: 'Citizen Soldiers-Let it burn',
+        title: 'Let it burn',
         src: burn,
         author: 'Citizen Soldier',
-        thumbnail: 'https://i1.sndcdn.com/avatars-kgFrNA8w3tUZt2dc-Xh7jGw-t500x500.jpg',
+        thumbnail: 'https://i.pinimg.com/564x/49/38/73/4938733a99857e8f69714b574fc01268.jpg',
         lyrics: `Take my hand and look at me in the eye 
         There's still time left 
         Cut these chords, and kid, run for your life
@@ -75,10 +75,10 @@ export const track = [
         Light it up and let it burn`
     },
     {
-        title: 'Meg & Dia-Monster',
+        title: 'Monster',
         src: meg,
         author: 'Meg & Dia',
-        thumbnail: 'https://www.whosampled.com/static/track_images_200/lr43330_2012625_115817889352.jpg',
+        thumbnail: 'https://i.pinimg.com/564x/d2/df/60/d2df609f6c8faa49420111cf67c5957e.jpg',
         lyrics: `His little whispers: Love me, love me
         That's all I ask for: Love me, love me
         He battered his tiny fists to feel something
@@ -112,10 +112,10 @@ export const track = [
         Their words tattooed in his veins`
     },
     {
-        title: 'Superchick-Stand in the rain',
+        title: 'Stand in the rain',
         src: rain,
         author: 'Superchick',
-        thumbnail: 'https://ih1.redbubble.net/image.3627038180.2483/fcp,small,wall_texture,product,750x1000.jpg',
+        thumbnail: 'https://i.pinimg.com/564x/43/33/64/433364a573024e3c3a4a4059b44ff00b.jpg',
         lyrics: `She never slows down.
         She doesn't know why
         But she knows that when she's all alone,
@@ -163,10 +163,10 @@ export const track = [
         You stand in the rain`
     },
     {
-        title: 'Linkin Park-Heavy',
+        title: 'Heavy',
         src: mind,
         author: 'Linkin park',
-        thumbnail: 'https://i.pinimg.com/236x/d1/ba/17/d1ba1776b8f6cbe6b6c88e89643891f0--linkin-park-parks.jpg',
+        thumbnail: 'https://i.pinimg.com/564x/57/88/2a/57882a2d93290c5a1a7a6469c02e857b.jpg',
         lyrics: `I don't like my mind right now
         Stacking up problems that are so unnecessary
         Wish that I could slow things down
